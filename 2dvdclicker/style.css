@@ -1,0 +1,78 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+button {
+    padding: 10px 20px;
+    border: 1px solid #000000;
+    background-color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #000000;
+}
+h1 {
+    padding: 0;
+    margin: 0;
+}
+
+.beast {
+    background-image: url("img/beast.png");
+    background-size: 100%;
+}
+.beastless {
+    background-image: url("img/beastless.png");
+    background-size: 100%;
+}
+.beastmodeactivate {
+    background-image: url("img/beastmodeactivate.png");
+    background-size: 100%;
+}
+
+/* https://www.javiermorales.dev/blog/dvd */
+:root {
+    --container-w: 640;
+    --container-h: 640;
+    --logo-w: 64;
+    --logo-h: 64;
+    --speed: 90;
+    --duration-x: calc((var(--container-w) - var(--logo-w)) / var(--speed) * 1s);
+    --duration-y: calc((var(--container-h) - var(--logo-h)) / var(--speed) * 1s);
+}
+#screen {
+    width: 640px;
+    height: 640px;
+    border: 1px solid black;
+    margin: 0 auto;
+    position: relative;
+}
+.disc {
+    position: absolute;
+    width: calc(var(--logo-w) * 1px);
+    height: calc(var(--logo-h) * 1px);
+    user-select: none;
+}
+@keyframes x {
+    from { left: 0; }
+    to { left: calc(100% - var(--logo-w) * 1px); }
+}
+@keyframes y {
+    from { top: 0; }
+    to { top: calc(100% - var(--logo-h) * 1px); }
+}
+
+@keyframes rotate-cw {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+@keyframes rotate-ccw {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(-360deg); }
+}
