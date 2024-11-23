@@ -91,7 +91,7 @@ document.getElementById("win").addEventListener("click", function() {
         }, 100);
 
         // redirect to /2dvdclicker/index.html
-        window.location.href = "/2dvdclicker/index.html";
+        window.location.href = "./2dvdclicker/index.html";
     } else {
         // flash red
         document.getElementById("upgrade").style.backgroundColor = "#ff0000";
