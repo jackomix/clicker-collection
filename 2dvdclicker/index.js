@@ -179,7 +179,7 @@ document.getElementById("win").addEventListener("click", () => {
             document.getElementById("win").style.backgroundColor = "#ffffff";
         }, 100);
 
-        location.href = "./3evilpotionclicker.html";
+        location.href = "../3evilpotionclicker.html";
     } else {
         // flash red
         document.getElementById("win").style.backgroundColor = "#ff0000";
