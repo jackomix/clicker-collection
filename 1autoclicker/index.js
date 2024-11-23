@@ -85,18 +85,18 @@ document.getElementById("upgrade").addEventListener("click", function() {
 document.getElementById("win").addEventListener("click", function() {
     if (carsDestroyed >= 20) {
         // flash green
-        document.getElementById("upgrade").style.backgroundColor = "#00ff00";
+        document.getElementById("win").style.backgroundColor = "#00ff00";
         setTimeout(function() {
-            document.getElementById("upgrade").style.backgroundColor = "#ffffff";
+            document.getElementById("win").style.backgroundColor = "#ffffff";
         }, 100);
 
         // redirect to /2dvdclicker/index.html
         window.location.href = "./2dvdclicker/index.html";
     } else {
         // flash red
-        document.getElementById("upgrade").style.backgroundColor = "#ff0000";
+        document.getElementById("win").style.backgroundColor = "#ff0000";
         setTimeout(function() {
-            document.getElementById("upgrade").style.backgroundColor = "#ffffff";
+            document.getElementById("win").style.backgroundColor = "#ffffff";
         }, 100);
     }
 });
